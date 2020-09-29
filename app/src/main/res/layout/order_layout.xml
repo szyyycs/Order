@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#f1f1f1"
+    >
+<RelativeLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/ed_shape"
+    >
+
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/shop_icon"
+
+    android:scaleType="centerCrop"
+    />
+   <TextView
+       android:id="@+id/shopname"
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:textSize="25sp"
+       android:textColor="#444"
+       android:text="店名"
+       android:layout_marginLeft="60dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/goodslist"
+        >
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#666"
+        android:layout_alignParentBottom="true"
+        android:textSize="15sp"
+        android:text="等待店家接单中"
+        android:layout_marginLeft="10dp"
+
+        />
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_btn_shape"
+        android:textColor="#fff"
+        android:id="@+id/comment"
+        android:text="评价"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_btn_shape"
+        android:textColor="#fff"
+        android:id="@+id/accept"
+        android:layout_marginRight="10dp"
+        android:text="已收到"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:text="00.00"
+            android:id="@+id/sum"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#222"
+
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@id/sum"
+            android:layout_marginTop="20dp"
+            android:text="@string/money"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#222"
+            />
+        <TextView
+            android:id="@+id/goodsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:text="件"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/goodsnum"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:text="共"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/goodsnum"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

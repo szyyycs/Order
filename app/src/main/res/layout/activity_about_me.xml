@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eee"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingTop="10dp"
+            android:id="@+id/fanhui"
+            android:src="@mipmap/fanhui"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="关于我"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/fanhui"
+            android:textColor="#111"
+            android:textSize="25sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="欢迎使用个人开发的点餐系统！"
+            android:textSize="25sp"
+            />
+        <TextView
+
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="——上海大学 杨朝生"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

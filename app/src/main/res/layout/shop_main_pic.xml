@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/shop_item"
+    >
+    <RelativeLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ed_shape"
+        android:id="@+id/ee">
+        <ImageView
+            android:background="#fff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/shop_icon"
+            />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/shop_icon"
+            android:paddingStart="20dp"
+           android:layout_marginTop="15dp"
+            android:text="店铺名"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:textColor="#111"
+            android:background="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            >
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="90dp"
+                android:id="@+id/cc"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/goodsicon"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/cola"
+
+                />
+            <TextView
+                android:id="@+id/goodsname"
+                android:layout_width="80dp"
+                android:layout_toRightOf="@+id/cc"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:text="可乐"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:gravity="center"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

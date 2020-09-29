@@ -1,0 +1,884 @@
+Index: app/src/main/java/com/ycs/order/cart_fragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/cart_fragment.java	(date 1584545941484)
++++ app/src/main/java/com/ycs/order/cart_fragment.java	(date 1584545941484)
+@@ -0,0 +1,19 @@
++package com.ycs.order;
++
++import android.os.Bundle;
++import android.support.annotation.NonNull;
++import android.support.annotation.Nullable;
++import android.support.v4.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++import android.widget.TextView;
++
++public class cart_fragment extends Fragment {
++    @Nullable
++    @Override
++    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
++        View view=inflater.inflate(R.layout.cart_fragment,null);
++        return view;
++    }
++}
+Index: app/src/main/res/xml/values.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/xml/values.xml	(date 1583987933794)
++++ app/src/main/res/xml/values.xml	(date 1583987933794)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="utf-8"?>
++<network-security-config>
++    <base-config cleartextTrafficPermitted="true" />
++</network-security-config>
+Index: app/src/main/res/layout/activity_business_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_business_login.xml	(date 1584448907407)
++++ app/src/main/res/layout/activity_business_login.xml	(date 1584448907407)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".businessLoginActivity">
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/ycs/order/businessLoginActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/businessLoginActivity.java	(date 1584432479335)
++++ app/src/main/java/com/ycs/order/businessLoginActivity.java	(date 1584432479335)
+@@ -0,0 +1,13 @@
++package com.ycs.order;
++
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++
++public class businessLoginActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_business_login);
++    }
++}
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(date 1584550886304)
++++ app/src/main/res/layout/activity_main.xml	(date 1584550886304)
+@@ -0,0 +1,123 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".MainActivity"
++    android:background="#eee"
++    >
++
++    <fragment
++        android:id="@+id/fragment"
++        android:name="com.ycs.order.Main_Framgment"
++        android:layout_width="match_parent"
++        android:layout_height="match_parent" />
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="60dp"
++        android:layout_alignParentBottom="true"
++        android:orientation="horizontal"
++        android:background="#f8f8f8">
++        <TextView
++            android:layout_width="10dp"
++            android:layout_height="50dp"
++            android:background="#f8f8f8"
++            android:layout_weight="1"
++            />
++        <RelativeLayout
++            android:layout_width="50dp"
++            android:layout_height="60dp"
++            android:layout_weight="1"
++            >
++            <TextView
++                android:id="@+id/main"
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:background="@mipmap/main2"
++                android:layout_centerHorizontal="true"
++                />
++            <TextView
++                android:id="@+id/text1"
++                android:layout_width="match_parent"
++                android:layout_height="18dp"
++                android:layout_alignParentBottom="true"
++                android:textAlignment="center"
++                android:text="首页"
++                android:textColor="#333"
++                android:textStyle="bold"
++                />
++        </RelativeLayout>
++
++
++        <TextView
++            android:layout_width="40dp"
++            android:layout_height="50dp"
++            android:background="#f8f8f8"
++            android:layout_weight="1"/>
++        <RelativeLayout
++            android:layout_width="50dp"
++            android:layout_height="60dp"
++            android:layout_weight="1"
++            >
++
++            <TextView
++                android:id="@+id/cart"
++                android:layout_width="55dp"
++                android:layout_height="50dp"
++                android:layout_centerHorizontal="true"
++
++                android:background="@mipmap/car" />
++
++            <TextView
++                android:id="@+id/text2"
++                android:layout_width="match_parent"
++                android:layout_height="18dp"
++                android:layout_alignParentBottom="true"
++                android:textAlignment="center"
++                android:text="购物车"
++                android:textColor="#777"
++                android:textStyle="bold"
++                />
++        </RelativeLayout>
++
++        <TextView
++            android:layout_width="40dp"
++            android:layout_height="50dp"
++            android:background="#f8f8f8"
++            android:layout_weight="1"/>
++        <RelativeLayout
++            android:layout_width="50dp"
++            android:layout_height="60dp"
++            android:layout_weight="1"
++            >
++
++            <TextView
++                android:id="@+id/me"
++                android:layout_width="50dp"
++                android:layout_height="50dp"
++                android:background="@mipmap/me"
++                android:layout_centerHorizontal="true"
++                />
++            <TextView
++                android:id="@+id/text3"
++                android:layout_width="match_parent"
++                android:layout_height="18dp"
++                android:layout_alignParentBottom="true"
++                android:textAlignment="center"
++                android:text="我"
++                android:textColor="#777"
++                android:textStyle="bold"
++                />
++        </RelativeLayout>
++
++        <TextView
++
++            android:layout_width="10dp"
++            android:layout_height="50dp"
++            android:background="#f8f8f8"
++            android:layout_weight="1"
++            />
++    </LinearLayout>
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/ycs/order/BusinessActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/BusinessActivity.java	(date 1584432505438)
++++ app/src/main/java/com/ycs/order/BusinessActivity.java	(date 1584432505438)
+@@ -0,0 +1,14 @@
++package com.ycs.order;
++
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++
++public class BusinessActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_business);
++
++    }
++}
+Index: app/src/main/res/layout/cart_fragment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/cart_fragment.xml	(date 1584536888197)
++++ app/src/main/res/layout/cart_fragment.xml	(date 1584536888197)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent" android:layout_height="match_parent"
++    android:background="#eee">
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="222"
++        android:textSize="50sp"
++        android:gravity="center"
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/me_fragment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/me_fragment.xml	(date 1584545576189)
++++ app/src/main/res/layout/me_fragment.xml	(date 1584545576189)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent" android:layout_height="match_parent"
++    android:background="#eee"
++    >
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:text="333"
++        android:textSize="50sp"
++        android:gravity="center"
++        />
++
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/ycs/order/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/MainActivity.java	(date 1584550886409)
++++ app/src/main/java/com/ycs/order/MainActivity.java	(date 1584550886409)
+@@ -0,0 +1,71 @@
++package com.ycs.order;
++
++import android.content.res.Resources;
++import android.graphics.drawable.Drawable;
++import android.support.v4.app.FragmentManager;
++import android.support.v4.app.FragmentTransaction;
++import android.support.v4.app.Fragment;
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++import android.view.View;
++import android.widget.TextView;
++
++import java.util.ResourceBundle;
++
++public class MainActivity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_main);
++        getSupportActionBar().hide();
++        TextView maintv=(TextView)findViewById(R.id.main);
++        maintv.setOnClickListener(l);
++        TextView carttv=(TextView)findViewById(R.id.cart);
++        carttv.setOnClickListener(l);
++        TextView metv=(TextView)findViewById(R.id.me);
++        metv.setOnClickListener(l);
++    }
++
++    View.OnClickListener l=new View.OnClickListener() {
++        @Override
++        public void onClick(View v) {
++
++            FragmentManager fm=getSupportFragmentManager();
++            FragmentTransaction ft=fm.beginTransaction();
++            Fragment f=null;
++            TextView tvm=(TextView)findViewById(R.id.main);
++            TextView tv1=(TextView)findViewById(R.id.text1);
++            TextView tvc=(TextView)findViewById(R.id.cart);
++            TextView tv2=(TextView)findViewById(R.id.text2);
++            TextView tvme=(TextView)findViewById(R.id.me);
++            TextView tv3=(TextView)findViewById(R.id.text3);
++            switch (v.getId()){
++                case R.id.main:
++                    tvc.setBackgroundResource(R.mipmap.car);
++                    tvm.setBackgroundResource(R.mipmap.main2);
++                    tvme.setBackgroundResource(R.mipmap.me);
++                    f=new Main_Framgment();
++                    break;
++                case R.id.cart:
++                    tvc.setBackgroundResource(R.mipmap.car2);
++                    tvm.setBackgroundResource(R.mipmap.main);
++                    tvme.setBackgroundResource(R.mipmap.me);
++                    f=new cart_fragment();
++                    break;
++                case R.id.me:
++                    tvc.setBackgroundResource(R.mipmap.car);
++                    tvm.setBackgroundResource(R.mipmap.main);
++                    tvme.setBackgroundResource(R.mipmap.me2);
++                    f=new Me_Fragment();
++                    break;
++                default:
++                    break;
++            }
++            ft.replace(R.id.fragment, f);
++
++            ft.commit();
++
++        }
++    };
++}
+Index: app/src/main/java/com/ycs/order/Me_Fragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/Me_Fragment.java	(date 1584536888272)
++++ app/src/main/java/com/ycs/order/Me_Fragment.java	(date 1584536888272)
+@@ -0,0 +1,18 @@
++package com.ycs.order;
++
++import android.os.Bundle;
++import android.support.annotation.NonNull;
++import android.support.annotation.Nullable;
++import android.support.v4.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++public class Me_Fragment extends Fragment {
++    @Nullable
++    @Override
++    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
++        View view=inflater.inflate(R.layout.me_fragment,null);
++        return view;
++    }
++}
+Index: app/src/main/res/layout/activity_business.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_business.xml	(date 1584448907440)
++++ app/src/main/res/layout/activity_business.xml	(date 1584448907440)
+@@ -0,0 +1,35 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".BusinessActivity"
++    android:background="#94d09f">
++    <TextView
++        android:background="@drawable/button_shape"
++        android:layout_width="300dp"
++        android:layout_height="50dp"
++        android:id="@+id/b_register"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="240dp"
++        android:textColor="#fff"
++        android:text="注册"
++        android:textSize="20dp"
++        android:gravity="center"
++
++        />
++    <TextView
++        android:background="@drawable/button_shape"
++        android:layout_width="300dp"
++        android:layout_height="50dp"
++        android:id="@+id/b_login"
++        android:layout_centerHorizontal="true"
++        android:layout_marginTop="340dp"
++        android:textColor="#fff"
++        android:text="登陆"
++        android:textSize="20dp"
++        android:gravity="center"
++
++        />
++</RelativeLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/ycs/order/Main_Framgment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/ycs/order/Main_Framgment.java	(date 1584534808116)
++++ app/src/main/java/com/ycs/order/Main_Framgment.java	(date 1584534808116)
+@@ -0,0 +1,19 @@
++package com.ycs.order;
++
++import android.os.Bundle;
++import android.support.annotation.NonNull;
++import android.support.annotation.Nullable;
++import android.support.v4.app.Fragment;
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++public class Main_Framgment extends Fragment {
++    @Nullable
++    @Override
++    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
++
++        View view=inflater.inflate(R.layout.main_fragment,null);
++        return view;
++    }
++}
+Index: app/src/main/res/layout/main_fragment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/main_fragment.xml	(date 1584534808188)
++++ app/src/main/res/layout/main_fragment.xml	(date 1584534808188)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="utf-8"?>
++<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#eee"
++    >
++<TextView
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:text="111"
++    android:textSize="50sp"
++    android:gravity="center"
++    />
++
++</RelativeLayout>
+\ No newline at end of file
+diff --git app/src/main/res/mipmap-mdpi/me2.png app/src/main/res/mipmap-mdpi/me2.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..6d6b594feb04cecf098dd31d0b7cf9264bd5c319
+GIT binary patch
+literal 2901
+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
+
+diff --git app/src/main/res/mipmap-mdpi/me.png app/src/main/res/mipmap-mdpi/me.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..c99e286f5e5d9b9c34f37500fbc9a9690e47c4a4
+GIT binary patch
+literal 3520
+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
+
+diff --git app/src/main/res/mipmap-mdpi/car2.png app/src/main/res/mipmap-mdpi/car2.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..93a00726eda0e175220538b52371249ab543abd7
+GIT binary patch
+literal 2885
+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
+
+diff --git app/src/main/res/mipmap-mdpi/car.png app/src/main/res/mipmap-mdpi/car.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..af5b09547cb1302fc66d27e777e4cbf748256135
+GIT binary patch
+literal 3059
+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
+B-=F{h
+
+diff --git app/src/main/res/mipmap-mdpi/main2.png app/src/main/res/mipmap-mdpi/main2.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..2be7e9534fc8b7bc15a5f94abae86aca2b3a046b
+GIT binary patch
+literal 3135
+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
+Z{{_!^S%9n0YX|@U002ovPDHLkV1noT5oZ7Z
+
+diff --git app/src/main/res/mipmap-mdpi/main.png app/src/main/res/mipmap-mdpi/main.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a1746c3e4285a3c4eebcbeb79f8ac800c5c832f5
+GIT binary patch
+literal 3614
+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
+

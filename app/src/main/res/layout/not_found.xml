@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="300dp"
+    android:background="#f1f1f1"
+    >
+
+    <TextView
+        android:id="@+id/foundpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@mipmap/nofound"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toast"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#999"
+        android:text="这里什么都没有，商家还没有上架哦"
+        />
+
+</RelativeLayout>

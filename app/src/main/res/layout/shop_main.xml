@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shop_item"
+    >
+        <RelativeLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ed_shape"
+            android:id="@+id/ee">
+            <ImageView
+                android:background="#fff"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/shop_icon"
+                />
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/shop_icon"
+                android:paddingStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="店铺名"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:textColor="#111"
+                android:background="#fff"
+                android:textSize="20sp" />
+            <RelativeLayout
+                android:id="@+id/pingfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/s"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/star"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginLeft="230dp"
+                    />
+                <TextView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/s"
+                    android:layout_marginTop="53dp"
+                    android:textSize="16sp"
+                    android:text="5.0"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/star"
+                    android:layout_marginTop="53dp"
+                    android:text="月售"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/star"
+                    android:layout_marginTop="53dp"
+                    android:text="1000"
+                    android:layout_marginLeft="50dp"
+                    /></RelativeLayout>
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nn"
+        >
+        <TextView
+            android:layout_marginRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="60dp"
+            android:text="商品数量："
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+            android:id="@+id/gnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="7"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

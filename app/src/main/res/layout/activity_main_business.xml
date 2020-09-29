@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.MainBusinessActivity"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#fff"
+        android:text="欢迎您登陆商家管理系统"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/green"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_shape"
+        android:layout_marginTop="60dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/openshop"
+            >
+        <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:text="您暂无店铺，点击开店"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            />
+            <TextView
+                android:id="@+id/btn_openshop"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/yz_shape"
+                android:text="一键开店"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_marginTop="200dp"
+                />
+        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:id="@+id/allsetting"
+    >
+    <ImageView
+        android:id="@+id/shop_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/iconblank"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:text="店铺名"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ed_shape"
+        android:layout_marginTop="280dp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/managerorder"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/order"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/order"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order"
+                    android:layout_alignParentBottom="true"
+                    android:text="管理订单"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/managergoods"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/goods"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/goods1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/goods"
+                    android:layout_alignParentBottom="true"
+                    android:text="管理商品"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                >
+
+
+                <TextView
+                    android:id="@+id/shoucang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/comment"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shoucang"
+                    android:layout_alignParentBottom="true"
+                    android:text="查看评论"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            >
+
+
+            <RelativeLayout
+
+                android:id="@+id/manashop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                >
+                <TextView
+                    android:id="@+id/managershop"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/managershop"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/dingdan"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/managershop"
+                    android:layout_alignParentBottom="true"
+                    android:text="管理店铺"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:id="@+id/quitAccount"
+                >
+                <TextView
+                    android:id="@+id/quitaccount"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/quitaccount"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quitaccount"
+                    android:layout_alignParentBottom="true"
+                    android:text="退出账号"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:id="@+id/quitAll"
+                >
+
+
+                <TextView
+                    android:id="@+id/quitall"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/quit"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quitall"
+                    android:layout_alignParentBottom="true"
+                    android:text="退出程序"
+                    android:textColor="#444"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/exit"
+        android:text="退出当前账号"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="100dp"
+        android:paddingTop="8dp"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:textColor="#e9672c"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/exitall"
+        android:text="退出程序"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:paddingTop="8dp"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:textColor="#e9672c"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

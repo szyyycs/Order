@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="230dp"
+    android:background="#eee"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ed_shape"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/user_icon"
+
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:text="用户名"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/userphone"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:text="13500000000"
+            android:layout_toRightOf="@+id/username"
+            />
+
+        <TextView
+            android:id="@+id/useraddress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="#555"
+            android:text="某某市某某小区"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="0000-01-01 00:00:00"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/goodslist"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:text="00.00"
+                android:id="@+id/sum"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#222"
+
+                />
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@id/sum"
+                android:layout_marginTop="20dp"
+                android:text="@string/money"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#222"
+                />
+            <TextView
+                android:id="@+id/goodsnum"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="件"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/goodsnum"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="50dp"
+                android:text="共"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/goodsnum"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:id="@+id/song"
+            android:textColor="#fff"
+            android:text="点击配送"
+            android:background="@drawable/green_btn_shape"
+        />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#666"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"
+            android:text="等待接单"
+            android:layout_marginLeft="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:id="@+id/jiedan"
+            android:textColor="#fff"
+            android:text="点击接单"
+            android:background="@drawable/green_btn_shape"
+            />
+    </RelativeLayout>
+</RelativeLayout>

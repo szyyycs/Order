@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">点餐系统</string>
+    <string name="money">¥</string>
+    <string name="接单">等待店家接单中</string>
+    <string name="配送">订单在配送途中</string>
+    <string name="host">192.168.1.5</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity.RegisterActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#eee"
+
+
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:paddingTop="10dp"
+        android:id="@+id/fanhui"
+        android:src="@mipmap/fanhui"
+        />
+
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:text="创建账户"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#555"
+        android:textSize="25sp"
+        android:layout_marginStart="30dp"
+        />
+<EditText
+    android:id="@+id/r_phone"
+    android:layout_width="400dp"
+    android:background="@drawable/ed_shape"
+    android:textColorHint="#aaa"
+    android:hint="请输入您的手机号码"
+    android:maxLength="11"
+    android:inputType="phone"
+    android:layout_height="40dp"
+    android:maxLines="1"
+    android:layout_marginTop="160dp"
+    android:layout_marginLeft="30dp"
+    />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:id="@+id/r_code"
+        android:layout_width="220dp"
+        android:background="@drawable/ed_shape"
+        android:textColorHint="#aaa"
+        android:hint="请输入验证码"
+        android:maxLines="1"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <TextView
+        android:id="@+id/r_getCode"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/yz_shape"
+        android:layout_marginLeft="260dp"
+        android:text="获取验证码"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:id="@+id/r_pwd"
+        android:layout_width="300dp"
+        android:background="@drawable/ed_shape"
+        android:textColorHint="#aaa"
+        android:hint="密码（至少6位字符）"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:password="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="30dp"
+        tools:ignore="Deprecated" />
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/button_shape"
+        android:id="@+id/r_register"
+        android:gravity="center"
+        android:text="注册"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:id="@+id/r_notice"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:textColor="#777"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="440dp"/>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ycs.order">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon1"
+        android:label="@string/app_name"
+        android:launchMode="standard"
+        android:networkSecurityConfig="@xml/values"
+        android:roundIcon="@mipmap/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".userActivity.LikeActivity"></activity>
+        <activity android:name=".userActivity.HistoryActivity" />
+        <activity android:name=".userActivity.OrderInfoActivity" />
+        <activity android:name=".shopActivity.BusinessCommentActivity" />
+        <activity android:name=".userActivity.MyCommentActivity" />
+        <activity android:name=".userActivity.CommentActivity" />
+        <activity android:name=".shopActivity.EditGoodsActivity" />
+        <activity android:name=".shopActivity.AddGoodActivity" />
+        <activity android:name=".shopActivity.ManagerOrderActivity" />
+        <activity android:name=".shopActivity.ManageGoodsActivity" />
+        <activity android:name=".userActivity.CountActivity" />
+        <activity android:name=".userActivity.EditAddressActivity" />
+        <activity android:name=".userActivity.AddAddressActivity" />
+        <activity android:name=".userActivity.AddressActivity" />
+        <activity android:name=".shopActivity.ManagerShopActivity" />
+        <activity android:name=".shopActivity.OpenShop" />
+        <activity android:name=".shopActivity.MainBusinessActivity" />
+        <activity android:name=".shopActivity.BusinessForgetActivity" />
+        <activity android:name=".shopActivity.BusinessRegesterActivity" />
+        <activity android:name=".userActivity.ShopActivity" />
+        <activity android:name=".userActivity.AboutMeActivity" />
+        <activity android:name=".userActivity.InfoActivity" />
+        <activity android:name=".userActivity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".shopActivity.businessLoginActivity" />
+        <activity android:name=".userActivity.FindpActivity" />
+        <activity android:name=".userActivity.RegisterActivity" />
+        <activity android:name=".userActivity.loginActivity" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.ycs.order.BmobContentProvider">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ycs.order.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+    <!-- 允许联网 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 写入SD卡的权限：如果你希望保存相机拍照后的照片 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读取SD卡的权限:打开相册选取图片所必须的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 拍照 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PERMISSIONS_STORAGE" />
+
+    <uses-sdk android:targetSdkVersion="17" />
+
+</manifest>

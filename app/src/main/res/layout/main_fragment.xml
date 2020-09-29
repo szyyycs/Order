@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#94d09f"
+        >
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="欢迎您，"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background_main"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:background="@mipmap/p4"
+                />
+            <RelativeLayout
+                android:id="@+id/p"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:id="@+id/ptv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="按创建时间排序"
+                    android:gravity="right|bottom"
+                    android:layout_marginRight="20dp"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/shoplist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/shoplist"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+</FrameLayout>

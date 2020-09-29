@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce8abeae-2e23-4fc9-bfe3-46f93d0c5992" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/AboutMeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/BusinessActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/InfoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/Main_Framgment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/Me_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/MyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/SharedPreferencesUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/ShopActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/businessLoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/ycs/order/cart_fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable/background_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable/cart_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable/pic_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_about_me.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_business.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_business_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/cart_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/main_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/me_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/shop_goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/shop_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/car2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/dingdan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/fanhui.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/lishi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/loc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/location.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/main2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/me2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/safe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/set.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/shoucang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/xihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greenback.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sub.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xml/values.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1ZfE5F9wJ3SbW2ooQYi1AvXLpTh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce8abeae-2e23-4fc9-bfe3-46f93d0c5992" name="Default Changelist" comment="" />
+      <created>1585221562960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585221562960</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

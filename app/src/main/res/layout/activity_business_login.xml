@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.businessLoginActivity"
+    android:background="@color/green"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingTop="10dp"
+            android:id="@+id/fanhui"
+            android:src="@mipmap/greenback"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="欢迎您登陆商家管理系统！"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/ed_shape"
+        android:textColor="#444"
+        android:textColorHint="#94d09f"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="请输入您的用户名/手机号"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:textColorHint="#94d09f"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ed_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:textColor="#444"
+        android:hint="请输入您的密码"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:password="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+    <TextView
+        android:background="@drawable/button_shape"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="540dp"
+        android:textColor="#fff"
+        android:text="登陆"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/b_register"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:text="注册账户"
+
+        />
+    <TextView
+        android:id="@+id/b_forget"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="610dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:text="忘记密码？"
+
+        />
+</RelativeLayout>

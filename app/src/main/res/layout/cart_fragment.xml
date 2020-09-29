@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="订单"
+        android:textSize="25sp"
+        android:textColor="#444"
+        android:gravity="center"
+        android:background="#fff"
+        />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_refresh"
+        android:background="#f1f1f1"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:id="@+id/order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/order_list"
+                    android:paddingRight="10dp"
+                    android:textColor="#aaa"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ccc"
+                    />
+                <TextView
+                    android:id="@+id/like"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tishi"
+                    android:text=""
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/list"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+
+                    />
+            </LinearLayout>
+
+    </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+
+
+
+</LinearLayout>

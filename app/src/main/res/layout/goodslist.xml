@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="90dp"
+            android:id="@+id/cc"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/goodsicon"
+            android:scaleType="centerCrop"
+
+
+            />
+        <TextView
+            android:id="@+id/goodsname"
+            android:layout_width="80dp"
+            android:layout_toRightOf="@+id/cc"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="可乐"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:gravity="center"
+
+            />
+    </RelativeLayout>

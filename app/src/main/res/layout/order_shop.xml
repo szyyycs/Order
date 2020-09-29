@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="91dp"
+    android:id="@+id/goods_count"
+    android:background="#fff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#fff"
+        >
+
+
+    <ImageView
+        android:id="@+id/goods_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/temp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="20sp"
+        android:text="这里是商品名"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="70dp"
+        android:textColor="#333"
+        />
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="00.00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+
+            android:layout_toLeftOf="@+id/goods_price"
+            android:text="¥"
+            android:textColor="#222"
+            android:textSize="15sp" />
+<TextView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_toRightOf="@+id/goods_icon"
+    android:layout_marginTop="55dp"
+    android:text="×"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/jjj"
+    android:gravity="center"
+    android:textSize="15sp"
+    />
+    <TextView
+        android:id="@+id/goods_num"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/jjj"
+        android:layout_marginTop="55dp"
+        android:text="1"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f8f8f8"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
+</RelativeLayout>

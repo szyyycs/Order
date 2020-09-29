@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.ManagerOrderActivity"
+    android:orientation="vertical"
+    android:background="#eee"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingTop="10dp"
+            android:id="@+id/fanhui"
+            android:src="@mipmap/greenback"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="管理订单"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/green"
+            android:layout_toRightOf="@+id/fanhui"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+
+        <LinearLayout
+            android:background="#eee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/orderlist"
+            >
+
+
+
+        </LinearLayout>
+            <TextView
+                android:background="#eee"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:baselineAlignBottom="true"
+                />
+</LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/yz_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="月总收入为："
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/month"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/month"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ttt"
+            android:id="@+id/input"
+            android:text="0000.00"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/input"
+            android:id="@+id/ordern"
+            android:text="订单数:"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ordern"
+            android:id="@+id/ordernum"
+            android:text="0000"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            />
+            </RelativeLayout>
+</RelativeLayout>

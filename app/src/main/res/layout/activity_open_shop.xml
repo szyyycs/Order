@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shopActivity.OpenShop">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:paddingTop="10dp"
+            android:id="@+id/fanhui"
+            android:src="@mipmap/greenback"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="设置店铺信息"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#eee"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:id="@+id/layouticon"
+            >
+            <TextView
+                android:id="@+id/tishi"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="点击设置您的店铺头像"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/iconblank"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="30dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="#fff"
+        >
+        <EditText
+            android:id="@+id/shopname"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="点击填写您的店铺名（最多8个字符）"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:background="#fff"
+            >
+            <EditText
+                android:id="@+id/shopAddress"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="点击填写您的店铺地址"
+                android:lines="4"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:maxLength="100"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="top"
+                android:paddingTop="10dp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/registershop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:text="一键注册店铺"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

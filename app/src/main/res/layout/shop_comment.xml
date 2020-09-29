@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f1f1"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f1f1f1" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/ed_shape"
+        >
+
+
+
+
+        <ImageView
+            android:id="@+id/usericon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="#fff"
+            android:scaleType="centerCrop"
+
+            />
+        <ImageView
+            android:id="@+id/zan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/zan"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/zannum"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/zan"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/usericon"
+
+            android:text="这是用户名"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#444"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/usericon"
+            android:text="评价："
+            />
+        <RatingBar
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="108dp"
+            android:isIndicator="true"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:progressTint="@color/yellow"
+            />
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="55dp"
+            android:text="非常好非常好777777777777777777777777777777777777799988880765"
+            android:background="@drawable/edtext"
+            android:maxLines="2"
+            android:layout_marginLeft="50dp"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_alignParentRight="true"
+            android:text="2000.01.01"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

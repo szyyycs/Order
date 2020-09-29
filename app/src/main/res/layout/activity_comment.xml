@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userActivity.CommentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/fanhui"
+            android:src="@mipmap/greenback"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="评论"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#eee"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ed_shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="您对该商家/菜品满意吗？"
+                android:textSize="20sp"
+                android:textColor="#333"
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/icon"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+
+                />
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:layout_marginLeft="80dp"
+                android:text="商家名称"
+                android:layout_marginTop="50dp"
+               android:gravity="center_vertical"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f1f1f1"
+                android:layout_marginTop="40dp"
+                />
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="120dp"
+                android:textColor="#444"
+                android:textSize="20sp"
+                android:text="评分"
+                android:gravity="center"
+
+                />
+            <RatingBar
+                android:id="@+id/rb"
+                style="?attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="60dp"
+                android:progressTint="@color/yellow"
+                android:rating="5"/>
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="170dp"
+                android:hint="添加评价"
+                android:lines="5"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:background="@drawable/edtext"
+                />
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="450dp"
+                android:textColor="#fff"
+                android:text="提交评论"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/yz_shape"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

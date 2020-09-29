@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f1f1"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f1f1f1" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ed_shape"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/icon"
+                android:scaleType="centerCrop"
+
+                />
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="这是店名"
+                android:layout_toRightOf="@+id/icon"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#444"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f1f1f1"
+                android:layout_marginTop="29dp"
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/usericon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+
+            android:src="@mipmap/icon1"
+            android:background="#fff"
+            android:scaleType="centerCrop"
+
+            />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/usericon"
+            android:layout_marginTop="40dp"
+            android:text="这是用户名"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="#444"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/usericon"
+            android:text="评价："
+            />
+        <RatingBar
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="108dp"
+            android:isIndicator="true"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            />
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp"
+            android:text="非常好非常好777777777777777777777777777777777777799988880765"
+            android:background="@drawable/edtext"
+            android:maxLines="2"
+            android:layout_marginLeft="50dp"
+            android:textColor="#333"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:text="2000.01.01"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

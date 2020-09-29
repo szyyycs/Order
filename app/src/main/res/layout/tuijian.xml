@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    >
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/ed_shape"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+    android:id="@+id/o"
+        >
+        <ImageView
+
+            android:id="@+id/shopicon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/shopicon"
+
+            android:textColor="#333"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="13dp"
+            />
+    <ImageView
+        android:id="@+id/s"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/star"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="90dp"
+        />
+    <TextView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/s"
+        android:layout_marginTop="53dp"
+        android:textSize="16sp"
+        android:text="5.0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/star"
+        android:layout_marginTop="53dp"
+        android:text="月售"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/star"
+        android:layout_marginTop="53dp"
+        android:text="1000"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/in"
+        />
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#eee"
+        android:layout_below="@+id/o"
+        />
+    </RelativeLayout>
